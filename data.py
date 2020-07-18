@@ -42,7 +42,7 @@ def StockListing(market):
     if market in [ 'S&P500', 'SP500']:
         return WikipediaStockListing(market).read()
     else:
-        msg = "market=%s is not implemented" % market
+        msg = "market=%s is not implemented." % market
         raise NotImplementedError(msg)
 
 def EtfListing(country='KR'):
